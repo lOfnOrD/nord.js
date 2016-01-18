@@ -1,0 +1,7 @@
+{
+  "generator-react-webpack": {
+    "appName": "nord",
+    "style": "sass",
+    "postcss": false
+  }
+}
