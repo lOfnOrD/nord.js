@@ -17,7 +17,9 @@
     "serve:dist": "node server.js --env=dist",
     "start": "node server.js --env=dev",
     "test": "karma start",
-    "test:watch": "karma start --autoWatch=true --singleRun=false"
+    "test:watch": "karma start --autoWatch=true --singleRun=false",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "repository": "",
   "keywords": [],
@@ -69,6 +71,8 @@
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "react-redux": "^4.0.6",
-    "redux": "^3.0.5"
-  }
+    "redux": "^3.0.5",
+    "snyk": "^1.319.0"
+  },
+  "snyk": true
 }
